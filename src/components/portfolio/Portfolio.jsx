@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+import PortfolioTab from "../portfolioTab/PortfolioTab";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
@@ -62,7 +62,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList
+          <PortfolioTab
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
